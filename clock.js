@@ -1,29 +1,39 @@
-function showTime(){
-    var date = new Date();
-    var h = date.getHours(); // 0 - 23
-    var m = date.getMinutes(); // 0 - 59
-    var s = date.getSeconds(); // 0 - 59
-    var session = "AM";
-    
-    if(h == 0){
-        h = 12;
+class DigitalClock {
+    constructor(element) {
+      this.element = element;
     }
-    
-    if(h > 12){
-        h = h - 12;
-        session = "PM";
+  
+    start() {
+      this.update();
+  
+      setInterval(() => {
+        this.update();
+      }, 500);
     }
-    
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-    s = (s < 10) ? "0" + s : s;
-    
-    var time = h + ":" + m + ":" + s + " " + session;
-    document.getElementById("MyClockDisplay").innerText = time;
-    document.getElementById("MyClockDisplay").textContent = time;
-    
-    setTimeout(showTime, 1000);
-    
-}
-
-showTime();
+  
+    update() {
+      const parts = this.getTimeParts();
+      const minuteFormatted = parts.minute.toString().padStart(2, "0");
+      const timeFormatted = `${parts.hour}:${minuteFormatted}`;
+      const amPm = parts.isAm ? "AM" : "PM";
+  
+      this.element.querySelector(".clock-time").textContent = timeFormatted;
+      this.element.querySelector(".clock-ampm").textContent = amPm;
+    }
+  
+    getTimeParts() {
+      const now = new Date();
+  
+      return {
+        hour: now.getHours() % 12 || 12,
+        minute: now.getMinutes(),
+        isAm: now.getHours() < 12
+      };
+    }
+  }
+  
+  const clockElement = document.querySelector(".clock");
+  const clockObject = new DigitalClock(clockElement);
+  
+  clockObject.start();
+  
