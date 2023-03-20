@@ -1,3 +1,3 @@
-[ ] 1.Add links
-[ ] 2.Add clock
-[ ] 3.Add searchbar
+-[ ] 1.Add links
+-[ ] 2.Add clock
+-[ ] 3.Add searchbar
