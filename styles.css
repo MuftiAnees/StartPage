@@ -1,19 +1,37 @@
-.clock {
-    background: #333333;
-    width: 200px;
+h1,h2 {
+    text-align: center;
+    color: ghostwhite;
+    font-family: 'Raleway', sans-serif;
+}
+
+body { 
+background-color: rgb(29, 29, 29);
+margin: 6rem;
+align-content: center;
+}
+
+.links {
+    margin: auto;
+    width: 50%;
     padding: 10px;
     text-align: center;
-    border-radius: 10px;
+    word-spacing: 25px;
+    border: 5px solid rgb(0, 45, 128);
+}
+
+a:link {
+    color: ghostwhite;
+    background-color: transparent;
+    text-decoration: none;
   }
   
-  .clock-time,
-  .clock-ampm {
-    font-family: "Concert One", cursive;
-    font-size: 30px;
-    color: #eeeeee;
+  a:visited {
+    color: ghostwhite;
+    background-color: transparent;
+    text-decoration: none;
   }
   
-  .clock-time {
-    font-size: 48px;
+  a:hover {
+    color: rgb(29, 208, 221);
+    background-color: transparent;
   }
-  
