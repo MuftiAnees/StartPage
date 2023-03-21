@@ -35,3 +35,7 @@ a:link {
     color: rgb(29, 208, 221);
     background-color: transparent;
   }
+  .linkIcon {
+    background-color: aliceblue;
+    margin: auto;
+  }
