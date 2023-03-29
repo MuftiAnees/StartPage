@@ -16,7 +16,8 @@ align-content: center;
     padding: 10px;
     text-align: center;
     word-spacing: 25px;
-    border: 5px solid rgb(0, 45, 128);
+    border: 5px solid rgb(146, 184, 255);
+    border-radius: 40px;
 }
 
 a:link {
@@ -39,3 +40,20 @@ a:link {
     background-color: aliceblue;
     margin: auto;
   }
+
+  .card {
+    background-color: aliceblue;
+    margin: auto;
+    width: 50%;
+    height: 15rem;
+    border-radius: 40px;
+  }
+  .searchbar {
+border-radius: 40px;
+background-color: aliceblue;
+align-items: center;
+}
+
+form {
+  background-color: brown;
+}
