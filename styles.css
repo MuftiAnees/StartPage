@@ -3,10 +3,13 @@ h1,h2 {
     color: ghostwhite;
     font-family: 'Raleway', sans-serif;
 }
+p {
+  margin: auto;
+}
 
 body { 
 background-color: rgb(29, 29, 29);
-margin: 6rem;
+/* margin: 6rem; */
 align-content: center;
 }
 
@@ -49,7 +52,7 @@ a:link {
     border-radius: 40px;
     text-align: center;
     font-size: 99px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
   .searchbar {
 border-radius: 40px;

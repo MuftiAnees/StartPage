@@ -1,91 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Start Page</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/8e47870f43.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <h1>Welcome!</h1>
-<div class="clock">
-    <p id="currentTime"></p>
-  <script>
-  var currentTime = new Date();
-  var hours = currentTime.getHours();
-  var minutes = currentTime.getMinutes();
-  var seconds = currentTime.getSeconds();
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Start Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8e47870f43.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  function updateTime() {
-    currentTime = new Date();
-    hours = currentTime.getHours();
-    minutes = currentTime.getMinutes();
-    seconds = currentTime.getSeconds();
+  <body>
+    <h1>Welcome, Anees!</h1>
+    <div class="clock">
+      <p id="currentTime"></p>
+      <script src="/clock.js"></script>
+    </div>
 
-    var timeString = hours + ":" + minutes;
-    document.getElementById("currentTime").innerHTML = timeString;
-  }
+    <div class="searchSettings">
+      <div class="search-bar">
+        <form action="https://www.google.com/search" method="GET">
+          <input type="text" name="q" autocomplete="off" />
+        </form>
+      </div>
+    </div>
 
-  setInterval(updateTime, 1000);
-  </script>
-</div>
+    <h2>Quick Links</h2>
+    <div class="links">
+      <a href="https://www.youtube.com/"
+        ><span style="font-size: 3em; color: ghostwhite">
+          <i class="fa-brands fa-youtube"></i> </span
+      ></a>
 
-<div class="searchSettings">
-  <div class="search-bar">
-    <form action="https://www.google.com/search" method="GET">
-      <input type="text" name="q" autocomplete="off">
-    </form>  
-  </div>
-</div>
+      <a href="https://www.github.com/"
+        ><span style="font-size: 3em; color: ghostwhite">
+          <i class="fa-brands fa-github"></i> </span
+      ></a>
 
-<h2>Quick Links</h2>
-<div class="links">
-  
-  <a href="https://www.youtube.com/"><span style="font-size: 3em; color: ghostwhite ;">
-  <i class="fa-brands fa-youtube"></i>
-  </span></a>
+      <a href="https://www.https://fitgirl-repacks.site/"
+        ><span style="font-size: 3em; color: ghostwhite">
+          <i class="fa-solid fa-gamepad"></i> </span
+      ></a>
 
-  <a href="https://www.github.com/"><span style="font-size: 3em; color: ghostwhite;">
-  <i class="fa-brands fa-github"></i>
-  </span></a>
+      <a href="https://store.steampowered.com/"
+        ><span style="font-size: 3em; color: ghostwhite">
+          <i class="fa-brands fa-steam"></i> </span
+      ></a>
 
-  <a href="https://www.https://fitgirl-repacks.site/"><span style="font-size: 3em; color: ghostwhite;">
-  <i class="fa-solid fa-gamepad"></i>
-  </span></a>
+      <a href="https://steamdb.info/"
+        ><span style="font-size: 3em; color: ghostwhite">
+          <i class="fa-solid fa-database"></i> </span></a
+      ><br />
 
-  <a href="https://store.steampowered.com/"><span style="font-size: 3em; color: ghostwhite;">
-  <i class="fa-brands fa-steam"></i>
-  </span></a>
+      <a href="https://www.fiverr.com/users/aneesmufti/seller_dashboard"
+        ><span style="font-size: 3em; color: ghostwhite">
+          <i class="fa-solid fa-money-bill"></i> </span
+      ></a>
 
-  <a href="https://steamdb.info/"><span style="font-size: 3em; color: ghostwhite;">
-  <i class="fa-solid fa-database"></i>
-  </span></a><br>
+      <a href="https://www.linkedin.com/"
+        ><span style="font-size: 3em; color: ghostwhite">
+          <i class="fa-brands fa-linkedin"></i> </span
+      ></a>
 
-  <a href="https://www.fiverr.com/users/aneesmufti/seller_dashboard"><span style="font-size: 3em; color: ghostwhite;">
-  <i class="fa-solid fa-money-bill"></i>
-  </span></a>
+      <a href="https://www.mail.google.com/"
+        ><span style="font-size: 3em; color: ghostwhite">
+          <i class="fa-solid fa-envelope"></i> </span
+      ></a>
 
-  <a href="https://www.linkedin.com/"><span style="font-size: 3em; color: ghostwhite;">
-  <i class="fa-brands fa-linkedin"></i>
-  </span></a>
+      <a href="https://www.fb.com/"
+        ><span style="font-size: 3em; color: ghostwhite">
+          <i class="fa-brands fa-facebook"></i> </span
+      ></a>
 
-  <a href="https://www.mail.google.com/"><span style="font-size: 3em; color: ghostwhite;">
-  <i class="fa-solid fa-envelope"></i>
-  </span></a>
-
-  <a href="https://www.fb.com/"><span style="font-size: 3em; color: ghostwhite;">
-  <i class="fa-brands fa-facebook"></i>
-  </span></a>
-
-  <a href="https://www.figma.com/"><span style="font-size: 3em; color: ghostwhite;">
-  <i class="fa-brands fa-figma"></i>
-  </span></a>
-
-</div>
-</body>
+      <a href="https://www.figma.com/"
+        ><span style="font-size: 3em; color: ghostwhite">
+          <i class="fa-brands fa-figma"></i> </span
+      ></a>
+    </div>
+  </body>
 </html>
