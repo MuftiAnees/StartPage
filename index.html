@@ -13,18 +13,35 @@
 </head>
 <body>
   <h1>Welcome!</h1>
-<div class="card">
+<div class="clock">
+    <p id="currentTime"></p>
+  <script>
+  var currentTime = new Date();
+  var hours = currentTime.getHours();
+  var minutes = currentTime.getMinutes();
+  var seconds = currentTime.getSeconds();
+
+  function updateTime() {
+    currentTime = new Date();
+    hours = currentTime.getHours();
+    minutes = currentTime.getMinutes();
+    seconds = currentTime.getSeconds();
+
+    var timeString = hours + ":" + minutes;
+    document.getElementById("currentTime").innerHTML = timeString;
+  }
+
+  setInterval(updateTime, 1000);
+  </script>
 </div>
 
-<form method="get" id="search" action="http://duckduckgo.com/">
-  <input type="hidden" name="sites" value="YOURDOMAIN.COM"/>
-  <input type="hidden" name="k8" value="#444444"/>
-  <input type="hidden" name="k9" value="#D51920"/>
-  <input type="hidden" name="kt" value="h"/>
-  <input type="text" name="q" maxlength="255" placeholder="Search&hellip;"/>
-  <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
-</form>
-
+<div class="searchSettings">
+  <div class="search-bar">
+    <form action="https://www.google.com/search" method="GET">
+      <input type="text" name="q" autocomplete="off">
+    </form>  
+  </div>
+</div>
 
 <h2>Quick Links</h2>
 <div class="links">
