@@ -1,6 +1,6 @@
 h1,h2 {
     text-align: center;
-    color: ghostwhite;
+    color: rgb(202, 202, 202);
     font-family: 'Raleway', sans-serif;
 }
 p {
@@ -9,7 +9,6 @@ p {
 
 body { 
 background-color: rgb(29, 29, 29);
-/* margin: 6rem; */
 align-content: center;
 }
 
@@ -19,7 +18,7 @@ align-content: center;
     padding: 10px;
     text-align: center;
     word-spacing: 25px;
-    border: 5px solid rgb(146, 184, 255);
+    border: 5px solid rgb(38, 67, 120);
     border-radius: 40px;
 }
 
@@ -45,7 +44,7 @@ a:link {
   }
 
   .clock {
-    background-color: aliceblue;
+    background-color: rgb(38, 67, 120);
     margin: auto;
     width: 50%;
     height: 15rem;
@@ -66,7 +65,7 @@ input {
   height: 40px;
   border-radius: 50px;
   border-color: white;
-  background-color: white;
+  background-color: rgb(38, 67, 120);
   color: #333333;
   font-size: 16px;
   padding: 10px 15px;
