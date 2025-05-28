@@ -1,15 +1,16 @@
 body {
   background-color: rgb(22, 23, 27);
   font-family: Arial, sans-serif;
-  color: #333;
+  color: #f1f1f1;
 }
 
 .links {
   width: fit-content;
+  display: flex;
   margin: auto;
 }
 a:visited {
-  color: #bcbcbc;
+  color: #f1f1f1;
 }
 
 .links1 {
