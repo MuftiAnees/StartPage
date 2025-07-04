@@ -1,5 +1,7 @@
 body {
-  background-color: rgb(22, 23, 27);
+  background-image: url('Images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: Arial, sans-serif;
   color: #f1f1f1;
 }
@@ -13,6 +15,23 @@ a:visited {
   color: #f1f1f1;
 }
 
-.links1 {
-  background-color: blue;
+.links1 ,.links2 ,.links3, .links4{
+  background: rgba(255, 255, 255, 0.08); /* Transparent white */
+  border-radius: 16px;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 400px;
+  text-align: left;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  display:flex;
+  flex-direction: column;
+  gap:0.75rem;
+}
+
+h2 {
+  margin: 0px;
 }
