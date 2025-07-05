@@ -118,7 +118,7 @@ This project is open-source and available under the [MIT License](https://www.go
 
 If you have any questions or feedback, feel free to reach out:
 
-- **Anees:** [[Your GitHub Profile Link](https://github.com/MuftiAnees)]
+- **Anees:** [[Github](https://github.com/MuftiAnees)]
 - **Email:** [muftianees7@gmail.com]
 
 ---
