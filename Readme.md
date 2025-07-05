@@ -33,7 +33,7 @@ This project is designed to be your browser's custom start page. Here's how you 
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/YourUsername/custom-start-page.git
+    git clone https://github.com/MuftiAnees/StartPage.git
     ```
 
     (Replace `YourUsername` with your actual GitHub username and `custom-start-page` with your repository name.)
