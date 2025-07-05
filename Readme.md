@@ -36,8 +36,6 @@ This project is designed to be your browser's custom start page. Here's how you 
     git clone https://github.com/MuftiAnees/StartPage.git
     ```
 
-    (Replace `YourUsername` with your actual GitHub username and `custom-start-page` with your repository name.)
-
 2.  **Navigate to the project directory:**
 
     ```bash
@@ -73,7 +71,7 @@ This start page is designed to be easily customizable to your needs.
 
 ### Background Image
 
-- Change the `background-image` property in `styles.css` (around line 2) to your desired image URL or local path.
+- Change the `background-image` property in `styles.css` (line 2) to your desired image URL or local path.
   ```css
   body {
     background-image: url("Images/your-new-bg.jpg"); /* Update this path */
@@ -99,7 +97,7 @@ This start page is designed to be easily customizable to your needs.
 
 ### Clock Display
 
-- Adjust the `font-size` of the `#clock` in `styles.css` (around line 90) to change its size.
+- Adjust the `font-size` of the `#clock` in `styles.css` (line 81) to change its size.
 - Modify `clock.js` if you want to change the time format or add/remove seconds/date.
 
 ---
@@ -120,7 +118,7 @@ This project is open-source and available under the [MIT License](https://www.go
 
 If you have any questions or feedback, feel free to reach out:
 
-- **Your Name:** [Your GitHub Profile Link]
-- **Email:** [Your Email Address]
+- **Anees:** [[Your GitHub Profile Link](https://github.com/MuftiAnees)]
+- **Email:** [muftianees7@gmail.com]
 
 ---
