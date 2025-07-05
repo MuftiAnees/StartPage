@@ -3,55 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Custom Start Page</title>
     <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div id="clock"><script src="clock.js"></script></div>
-      <!-- <div class="Weather">Weather</div> -->
-      <div class="Search">
+    <main class="container">
+      <div id="clock"></div>
+
+      <section class="Search">
         <form action="https://duckduckgo.com/" method="get" target="_blank">
-          <input type="text" name="q" placeholder="Search the web..." />
+          <input
+            type="text"
+            name="q"
+            placeholder="Search the web..."
+            aria-label="Search the web"
+          />
           <button type="submit">Search</button>
         </form>
-      </div>
-      <div class="all_links">
+      </section>
+
+      <section class="all_links">
         <div class="links">
-          <h2>Work and productivity</h2>
-          
+          <h2>Work & Productivity</h2>
+          <a href="https://mail.google.com/mail/u/0/">Gmail</a>
           <a href="https://www.upwork.com/nx/find-work/5903837">Upwork</a>
           <a href="https://alternativeto.net/">Alternative To</a>
-          <a href="https://www.freecodecamp.org/">Free Code Camp</a>
-        </div>
-        <div class="links">
-          <h2>Learning and development</h2>
-          <a href="https://www.linkedin.com/">LinkedIn</a>
-          <a href="https://github.com/">Github</a>
-          <a href="https://steamdb.info/sales/">Steam DB</a>
-          <a href="https://mail.google.com/mail/u/0/">Gmail</a>
           <a href="https://chatgpt.com/">ChatGPT</a>
         </div>
         <div class="links">
-          <h2>Entertainment and media</h2>
-          <a href="https://www.youtube.com/feed/subscriptions">Youtube</a>
+          <h2>Tech & Learning</h2>
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+          <a href="https://github.com/">GitHub</a>
+          <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
+        </div>
+        <div class="links">
+          <h2>Entertainment</h2>
+          <a href="https://www.youtube.com/feed/subscriptions">YouTube</a>
           <a href="https://www.twitch.tv/">Twitch</a>
-
         </div>
         <div class="links">
           <h2>Gaming</h2>
           <a href="https://store.steampowered.com/">Steam</a>
-          <a href="https://fitgirl-repacks.site/">FitGirl Repacks</a>
-          <a href="https://dodi-repacks.site/">Dodi Repacks</a>
-          <a href="https://elamigos.site/">elamigos</a>
-          <a href="https://itch.io/">Itch</a>
+          <a href="https://steamdb.info/sales/">Steam DB</a>
+          <a href="https://fitgirl-repacks.site/">FitGirl</a>
+          <a href="https://dodi-repacks.site/">Dodi</a>
+          <a href="https://elamigos.site/">ElAmigos</a>
+          <a href="https://itch.io/">Itch.io</a>
         </div>
         <div class="links">
-          <h2>Shopping and Tools</h2>
-          <a href="https://www.aliexpress.com/">Ali Express</a>
+          <h2>Shopping & Tools</h2>
+          <a href="https://www.aliexpress.com/">AliExpress</a>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
+
+    <script src="clock.js"></script>
   </body>
 </html>
